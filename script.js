@@ -1,4 +1,4 @@
-let auxiliar = "0";
+let auxiliar = '0';
 let resultado = 0;
 let operacao;
 const tela = document.querySelector('.box-screen');
@@ -71,7 +71,7 @@ switch (simbolo){
 }
 
     function identificarNumero(numberCalc){
-        if(auxiliar === "0"){
+        if(auxiliar === '0'){
             auxiliar = numberCalc;
         }else {
             auxiliar += numberCalc;
@@ -79,8 +79,8 @@ switch (simbolo){
     }
     
     function iniciar(){
-        document.querySelector('.button-calc').addEventListener('click', function(event){
-            botaoClicado(event.target.innerText)
+        document.querySelector('.box-button-main').addEventListener('click', function(event){
+            botaoClicado(event.target.innerText);
         })
     }
 
